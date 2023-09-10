@@ -5,3 +5,16 @@
 // MIXINS
 
 @use "./partials/mixins.scss" as *;
+
+img {
+  width: 100%;
+}
+
+body {
+  // font-family: "Rambla", sans-serif;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+ul > li {
+  list-style: none;
+}

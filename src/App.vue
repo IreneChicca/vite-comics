@@ -5,17 +5,16 @@ import AppContent from "./AppContent.vue";
 
 export default {
   data() {
-    return {
-      title: "ciao",
-    };
+    return {};
   },
 
   components: { AppHeader, AppContent, AppFooter },
 };
 </script>
 <template>
-  <h1>{{ title }}</h1>
-  <AppHeader></AppHeader>
+  <AppHeader />
+  <AppContent />
+  <AppFooter />
 </template>
 <style lang="scss">
 @use "./style/generals.scss" as *;

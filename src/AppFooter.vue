@@ -6,6 +6,6 @@ export default {
 };
 </script>
 <template>
-  <ul></ul>
+  <h1>footer</h1>
 </template>
 <style lang="scss" scoped></style>

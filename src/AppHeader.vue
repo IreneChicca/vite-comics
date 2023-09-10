@@ -19,6 +19,24 @@ export default {
 };
 </script>
 <template>
-  <h2>prova</h2>
+  <nav class="">
+    <div class="nav d-flex justify-content-between p-4 container">
+      <div><img src="./assets/img/dc-logo.png" alt="" class="w-50" /></div>
+      <ul class="d-flex">
+        <li v-for="(link, i) in navlinks" class="p-2 text-uppercase">
+          {{ navlinks[i] }}
+        </li>
+      </ul>
+    </div>
+  </nav>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.nav {
+  background-color: #ffffff;
+  color: #686a6a;
+
+  li {
+    font-weight: 700;
+  }
+}
+</style>

@@ -7,6 +7,7 @@ export default {
 </script>
 <template>
   <div class="content">
+    <div class="hero"></div>
     <h1>content goes here</h1>
   </div>
 </template>
@@ -14,6 +15,12 @@ export default {
 .content {
   background-color: #181818;
   color: #ffffff;
-  height: 200px;
+
+  .hero {
+    background-image: url(./assets/img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
 }
 </style>

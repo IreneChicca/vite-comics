@@ -24,6 +24,8 @@ export default {
           img: "buy-dc-power-visa.svg",
         },
       ],
+
+      socialLinks: ["fb.png", "twit.png", "yt.png", "pint.png", "fi.png"],
     };
   },
   methods: {
@@ -48,8 +50,8 @@ export default {
       </div>
     </div>
     <div class="footer-list">
-      <div class="container d-flex justify-content-between pos-rel">
-        <div class="d-flex">
+      <div class="container d-flex justify-content-between">
+        <div class="d-flex pt-4">
           <div class="col-4">
             <h5>DC COMICS</h5>
             <ul>
@@ -100,7 +102,23 @@ export default {
         </div>
       </div>
     </div>
-    <div class="footer-link"></div>
+
+    <div class="footer-social-link">
+      <div
+        class="d-flex justify-content-between align-items-center container pt-5 pb-5"
+      >
+        <div>
+          <button class="p-2">SIGN-UP NOW!</button>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <h4 class="me-3 m-0">FOLLOW US</h4>
+          <div v-for="(link, i) in socialLinks">
+            <img :src="pathImg(socialLinks[i])" alt="" class="p-2" />
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 <style lang="scss" scoped>
@@ -123,12 +141,19 @@ export default {
   li {
     color: #8b8d8d;
   }
-
-  .bg-logo {
-  }
 }
 
-.pos-rel {
-  position: relative;
+.footer-social-link {
+  background-color: #303030;
+
+  button {
+    background-color: #303030;
+    color: #ffff;
+    border: 2px solid #0086fc;
+  }
+
+  h4 {
+    color: #0086fc;
+  }
 }
 </style>

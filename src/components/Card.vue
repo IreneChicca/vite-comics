@@ -14,7 +14,7 @@ export default {
 <template>
   <div class="col-2 pt-5">
     <img :src="comic.thumb" alt="" class="p-2" />
-    <p class="m-0">{{ comic.series }}</p>
+    <p class="m-0 text-uppercase p-2">{{ comic.series }}</p>
   </div>
 </template>
 <style lang="scss" scoped>

@@ -98,8 +98,14 @@ export default {
     <!-- <img src="./assets/img/jumbotron.jpg" alt="" /> -->
     <div class="hero"></div>
     <div class="comics-box">
+      <div class="container">
+        <p class="banner p-2 text-uppercase">current series</p>
+      </div>
       <div class="container d-flex flex-wrap">
         <Card v-for="comic in comics" :comic="comic"></Card>
+      </div>
+      <div class="d-flex p-4">
+        <button class="text-uppercase btns">load more</button>
       </div>
     </div>
   </div>
@@ -118,6 +124,25 @@ export default {
 
   .comics-box {
     background-color: #1c1c1c;
+    position: relative;
+    font-weight: 500;
+  }
+
+  .banner {
+    background-color: #0282f9;
+    color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    font-weight: 500;
+  }
+
+  .btns {
+    background-color: #0282f9;
+    color: #ffffff;
+    margin: 0 auto;
+    border: none;
+    padding: 10px 80px 10px 80px;
   }
 }
 </style>

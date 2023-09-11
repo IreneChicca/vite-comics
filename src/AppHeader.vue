@@ -19,7 +19,7 @@ export default {
 };
 </script>
 <template>
-  <nav class="">
+  <nav>
     <div class="nav d-flex justify-content-between p-4 container">
       <div><img src="./assets/img/dc-logo.png" alt="" class="w-50" /></div>
       <ul class="d-flex">
@@ -37,6 +37,15 @@ export default {
 
   li {
     font-weight: 700;
+
+    &:hover {
+      color: #0282f9;
+      border-bottom: 3px solid #0282f9;
+    }
+  }
+
+  .active {
+    color: #0282f9;
   }
 }
 </style>
